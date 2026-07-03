@@ -1,0 +1,80 @@
+"management_groups":
+- "archetypes":
+  - "root_custom"
+  - "amba_root"
+  "display_name": "Azure Landing Zones TF Hub-Spoke Single Region"
+  "exists": true
+  "id": "alz-tf-hubspoke-single3"
+  "parent_id": null
+- "archetypes":
+  - "platform_custom"
+  - "amba_platform"
+  "display_name": "Platform"
+  "exists": false
+  "id": "platform-tf-hubspoke-single3"
+  "parent_id": "alz-tf-hubspoke-single3"
+- "archetypes":
+  - "landing_zones_custom"
+  - "amba_landing_zones"
+  "display_name": "Landing Zones"
+  "exists": false
+  "id": "landingzones-tf-hubspoke-single3"
+  "parent_id": "alz-tf-hubspoke-single3"
+- "archetypes":
+  - "corp_custom"
+  "display_name": "Corp"
+  "exists": false
+  "id": "corp-tf-hubspoke-single3"
+  "parent_id": "landingzones-tf-hubspoke-single3"
+- "archetypes":
+  - "online_custom"
+  "display_name": "Online"
+  "exists": false
+  "id": "online-tf-hubspoke-single3"
+  "parent_id": "landingzones-tf-hubspoke-single3"
+- "archetypes":
+  - "local_custom"
+  "display_name": "Local"
+  "exists": false
+  "id": "local-tf-hubspoke-single3"
+  "parent_id": "landingzones-tf-hubspoke-single3"
+- "archetypes":
+  - "sandbox_custom"
+  "display_name": "Sandbox"
+  "exists": false
+  "id": "sandbox-tf-hubspoke-single3"
+  "parent_id": "alz-tf-hubspoke-single3"
+- "archetypes":
+  - "security_custom"
+  "display_name": "Security"
+  "exists": false
+  "id": "security-tf-hubspoke-single3"
+  "parent_id": "platform-tf-hubspoke-single3"
+- "archetypes":
+  - "management_custom"
+  - "amba_management"
+  "display_name": "Management"
+  "exists": false
+  "id": "management-tf-hubspoke-single3"
+  "parent_id": "platform-tf-hubspoke-single3"
+- "archetypes":
+  - "connectivity_custom"
+  - "amba_connectivity"
+  "display_name": "Connectivity"
+  "exists": false
+  "id": "connectivity-tf-hubspoke-single3"
+  "parent_id": "platform-tf-hubspoke-single3"
+- "archetypes":
+  - "identity_custom"
+  - "amba_identity"
+  "display_name": "Identity"
+  "exists": false
+  "id": "identity-tf-hubspoke-single3"
+  "parent_id": "platform-tf-hubspoke-single3"
+- "archetypes":
+  - "decommissioned_custom"
+  "display_name": "Decommissioned"
+  "exists": false
+  "id": "decommissioned-tf-hubspoke-single3"
+  "parent_id": "alz-tf-hubspoke-single3"
+"name": "alz_custom"
